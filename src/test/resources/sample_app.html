@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Demo Travel App</title></head>
+<body>
+  <h2 id="flights-tab">Flights</h2>
+  <input id="source" placeholder="From">
+  <input id="destination" placeholder="To">
+  <input id="date" type="date">
+  <button id="search-btn" onclick="showResults()">Search</button>
+
+  <div id="results" style="margin-top:20px;display:none;">
+    <div class="flight-row" data-price="3500">IndiGo - ₹3500</div>
+    <div class="flight-row" data-price="4200">Air India - ₹4200</div>
+    <div class="flight-row" data-price="2800">SpiceJet - ₹2800</div>
+    <div class="flight-row" data-price="3900">Vistara - ₹3900</div>
+  </div>
+  <script>
+    function showResults() { document.getElementById('results').style.display='block'; }
+  </script>
+</body>
+</html>
